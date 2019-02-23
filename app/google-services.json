@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "179894433329",
+    "firebase_url": "https://hackillinois-a543a.firebaseio.com",
+    "project_id": "hackillinois-a543a",
+    "storage_bucket": "hackillinois-a543a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:179894433329:android:f9384e942144d0b7",
+        "android_client_info": {
+          "package_name": "com.example.jho.hackillinois"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "179894433329-un6kbhvq9dn5gp74ovmu9rhr0lkv25d3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdNM-STqZZ6cCZnfmDJnB21pS-ukfk7ds"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
