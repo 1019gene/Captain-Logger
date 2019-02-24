@@ -48,17 +48,35 @@ public class SortToCategory {
         for (Map.Entry<String, Double> entry : data.entrySet()) {
             Item toAdd = new Item(entry.getKey(), entry.getValue());
 
-            if (clothingKeywords.contains(entry.getKey().toLowerCase())) {
-                clothingList.add(toAdd);
-            } else if (foodKeywords.contains(entry.getKey().toLowerCase())) {
-                foodList.add(toAdd);
-            } else if (gasKeywords.contains(entry.getKey().toLowerCase())) {
-                gasList.add(toAdd);
-            } else if (entertainmentKeywords.contains(entry.getKey().toLowerCase())) {
-                entertainmentList.add(toAdd);
-            } else {
-                unknownList.add(toAdd);
+            for (String keyword : clothingKeywords) {
+                if (entry.getKey().contains(keyword)) {
+                    clothingList.add(toAdd);
+                    break;
+                }
             }
+
+            for (String keyword : foodKeywords) {
+                if (entry.getKey().contains(keyword)) {
+                    foodList.add(toAdd);
+                    break;
+                }
+            }
+
+            for (String keyword : gasKeywords) {
+                if (entry.getKey().contains(keyword)) {
+                    gasList.add(toAdd);
+                    break;
+                }
+            }
+
+            for (String keyword : entertainmentKeywords) {
+                if (entry.getKey().contains(keyword)) {
+                    entertainmentList.add(toAdd);
+                    break;
+                }
+            }
+
+            unknownList.add(toAdd);
         }
 
         HashMap<Categories, ArrayList<Item>> toReturn = new HashMap<>();
