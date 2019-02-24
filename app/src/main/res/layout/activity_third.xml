@@ -15,6 +15,8 @@
         android:layout_marginTop="52dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
+        android:entries="@array/category_arrays"
+        android:prompt="@string/category_prompt"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -49,10 +51,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+        app:layout_constraintTop_toBottomOf="@+id/amount_pt" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/amount_pt"
         android:layout_width="376dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -62,7 +64,7 @@
         android:layout_marginRight="8dp"
         android:ems="10"
         android:hint="amount"
-        android:inputType="number"
+        android:inputType="numberDecimal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.578"
         app:layout_constraintStart_toStartOf="parent"

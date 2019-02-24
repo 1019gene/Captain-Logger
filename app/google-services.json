@@ -15,6 +15,22 @@
       },
       "oauth_client": [
         {
+          "client_id": "179894433329-9ft6t4kgi2vm56g6nmgkq76s16854auk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.jho.hackillinois",
+            "certificate_hash": "7cd4b96c712319c5e55fdf7dcc07490ed86bc68b"
+          }
+        },
+        {
+          "client_id": "179894433329-dbn3l4a3555gi813h0980aknf23q07nv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.jho.hackillinois",
+            "certificate_hash": "4687645cc6dfd4bc065a742ab8de826016e28076"
+          }
+        },
+        {
           "client_id": "179894433329-s6a184m2r2udg9jsmll0hf3ao1vh37o0.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
