@@ -58,6 +58,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 if (task.isSuccessful()) {
                     Log.d("login", "login success");
                     FirebaseUser user = fire.getCurrentUser();
+                    Log.d("SecondActivity", "Have not reached");
+                    startSecondActivity();
                     //change to new activity
                 } else {
                     AlertDialog failureMessage = new AlertDialog.Builder(MainActivity.this).create();
@@ -86,4 +88,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
+    private void startSecondActivity() {
+        startActivity(new Intent(this, SecondActivity.class));
+    }
 }
