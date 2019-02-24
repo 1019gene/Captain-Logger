@@ -17,6 +17,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.FirebaseApp;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 import org.w3c.dom.Text;
 
@@ -71,6 +72,12 @@ public class SignUpActivity extends Activity implements View.OnClickListener {
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if (task.isSuccessful()) {
                     Toast.makeText(getApplicationContext(), "Registration successful", Toast.LENGTH_SHORT).show();
+                    Log.d("complete", "success");
+                    FirebaseUser user = fire.getCurrentUser();
+                    //change to new activity
+                } else {
+                    Toast.makeText(getApplicationContext(), "Registration failed, please try again", Toast.LENGTH_SHORT).show();
+                    Log.d("complete", "failure");
                 }
             }
         });
