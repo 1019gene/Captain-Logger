@@ -37,10 +37,7 @@ public class ThirdActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String currentAmount = String.valueOf(myRef.child("user").child(category).child("0"));
-                Knmn                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     d = Double.parseDouble(currentAmount);
-                String s = amount.getText().toString();
-                Double dd = Double.parseDouble(s);
-                Integer f = d + dd;
+
 
                 myRef.child("user").child(category).child("0").setValue("$$$$$");
 
