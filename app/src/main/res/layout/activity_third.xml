@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ThirdActivity">
+
+    <Spinner
+        android:id="@+id/spendtype_spn"
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="186dp" />
+
+    <EditText
+        android:id="@+id/description_pt"
+        android:layout_width="376dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="description: ie. boba, candy"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="19dp"
+        tools:layout_editor_absoluteY="278dp" />
+
+    <Spinner
+        android:id="@+id/importance_spn"
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="463dp" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="376dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="amount"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="19dp"
+        tools:layout_editor_absoluteY="363dp" />
+
+    <Button
+        android:id="@+id/dont_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="done"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="534dp" />
+</android.support.constraint.ConstraintLayout>
