@@ -85,7 +85,7 @@ public class SignUpActivity extends Activity implements View.OnClickListener {
 
     public void onClick(View view) {
         switch (view.getId()) {
-            case R.id.signUpHyperlink:
+            case R.id.loginHyperlink:
                 startActivity(new Intent(this, MainActivity.class));
                 break;
             case R.id.signup_btn:
