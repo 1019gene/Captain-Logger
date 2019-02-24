@@ -33,6 +33,7 @@
         </activity>
         <activity android:name=".ThirdActivity" />
         <activity android:name=".FourthActivity" />
+        <activity android:name=".SpendingsVisualizer"/>
 
         <meta-data
             android:name="com.google.firebase.ml.vision.DEPENDENCIES"

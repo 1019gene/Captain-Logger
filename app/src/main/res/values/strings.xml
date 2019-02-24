@@ -1,4 +1,15 @@
 <resources>
     <string name="app_name">HackIllinois</string>
     <string name="title_activity_sign_up">SignUpActivity</string>
+
+    <string name="category_prompt">Choose a category</string>
+
+    <string-array name="category_arrays">
+        <item>food</item>
+        <item>clothing</item>
+        <item>entertainment</item>
+        <item>gas</item>
+        <item>travel</item>
+
+    </string-array>
 </resources>
