@@ -20,13 +20,13 @@ public class ReceiptData {
 
 
     private void ParseBlocks(FirebaseVisionText VisionText){
-        for(FirebaseVisionText.TextBlock block: VisionText.getTextBlocks().){
+        for(FirebaseVisionText.TextBlock block: VisionText.getTextBlocks()){
             FindItemsInBlock(block);
         }
     }
 
     private void FindItemsInBlock(FirebaseVisionText.TextBlock block){
-        
+
     }
 
     public HashMap<String,Double> getData(){
