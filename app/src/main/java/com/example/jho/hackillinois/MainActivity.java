@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         FirebaseApp.initializeApp(MainActivity.this);
         fire = FirebaseAuth.getInstance();
-    }
+    }    
 
     private void userLogin() {
         String username = editTextUsername.getText().toString().trim();

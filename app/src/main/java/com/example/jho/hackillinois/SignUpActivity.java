@@ -80,7 +80,7 @@ public class SignUpActivity extends Activity implements View.OnClickListener {
                     Log.d("complete", "failure");
                 }
             }
-        }); 
+        });
     }
 
     public void onClick(View view) {
