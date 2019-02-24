@@ -1,6 +1,7 @@
 package com.example.jho.hackillinois;
 
 
+import android.net.Uri;
 import android.widget.Button;
 import com.camerakit.CameraKitView;
 
@@ -13,11 +14,12 @@ import android.support.annotation.*;
 
 import java.io.*;
 
+
 import android.os.Environment;
 
 import android.util.Log;
 
-import com.google.firebase.;
+import com.google.firebase.ml.vision.common.FirebaseVisionImage;
 
 public class takePhoto extends AppCompatActivity {
 
@@ -31,7 +33,7 @@ public class takePhoto extends AppCompatActivity {
 
         FirebaseVisionImage image;
 
-        private String filePath;
+        private Uri filePath;
 
         @Override
         protected void onCreate(Bundle savedInstanceState) {
@@ -73,7 +75,7 @@ public class takePhoto extends AppCompatActivity {
                     File savedPhoto = new File(Environment.getExternalStorageDirectory(), "photo.jpg");
                     try {
                         FileOutputStream outputStream = new FileOutputStream(savedPhoto.getPath());
-                        filePath = savedPhoto.getPath();
+                        filePath = Uri.parse(savedPhoto.getPath());
                         outputStream.write(photo);
                         outputStream.close();
                     } catch (java.io.IOException e) {
@@ -90,7 +92,7 @@ public class takePhoto extends AppCompatActivity {
          @Override
          public void onClick(View v){
              try {
-                 image = FirebaseVisionImage.fromFilePath(context, filePath);
+                 image = FirebaseVisionImage.fromFilePath(getApplicationContext(), filePath);
              } catch (IOException e) {
                  e.printStackTrace();
              }
