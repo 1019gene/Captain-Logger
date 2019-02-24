@@ -38,7 +38,6 @@ public class ThirdActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String currentAmount = String.valueOf(myRef.child("user").child(category).child("0"));
 
-
                 myRef.child("user").child(category).child("0").setValue("$$$$$");
 
                 startActivity(new Intent(ThirdActivity.this, SecondActivity.class));
