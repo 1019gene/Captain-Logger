@@ -16,15 +16,6 @@ public class SortToCategory {
         this.data = receiptData.getDataHashMap();
     }
 
-    /*
-    Clothing
-    Food
-    Gas
-    Books
-    Travel Expense
-    Entertainment
-     */
-
     private ArrayList<String> clothingKeywords = new ArrayList<>(Arrays.asList("shirt", "fleece", "hood", "sock"
             , "dress", "pant", "coat", "jacket", "underwear", "garment", "skirt", "suit", "bra"));
     private ArrayList<String> foodKeywords = new ArrayList<>(Arrays.asList("burrito", "taco"));
