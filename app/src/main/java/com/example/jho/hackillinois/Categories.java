@@ -1,7 +1,9 @@
 package com.example.jho.hackillinois;
 
 public enum Categories {
-    Essentials,
-    Luxuries,
+    Clothing,
+    Food,
+    Gas,
     Entertainment,
+    Unknown
 }
