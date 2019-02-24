@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "179894433329-s6a184m2r2udg9jsmll0hf3ao1vh37o0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.jho.hackillinois",
+            "certificate_hash": "4731251629f0b32f8d1d5b71feca351a59eeda00"
+          }
+        },
+        {
           "client_id": "179894433329-un6kbhvq9dn5gp74ovmu9rhr0lkv25d3.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -29,8 +37,13 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "179894433329-un6kbhvq9dn5gp74ovmu9rhr0lkv25d3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
           "status": 2
