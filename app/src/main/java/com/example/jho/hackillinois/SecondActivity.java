@@ -18,6 +18,10 @@ public class SecondActivity extends AppCompatActivity {
 
         Button manually = findViewById(R.id.manually_btn);
 
+        Button camera = findViewById(R.id.camera_btn);
+        camera.setOnClickListener(cameraOnClickListener);
+
+
         manually.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -25,4 +29,13 @@ public class SecondActivity extends AppCompatActivity {
             }
         });
     }
+    private View.OnClickListener cameraOnClickListener = new View.OnClickListener(){
+        @Override
+        public void onClick(View v){
+            startActivity(new Intent(SecondActivity.this, takePhoto.class));
+        }
+
+    };
+
+
 }

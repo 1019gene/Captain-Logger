@@ -1,5 +1,6 @@
 package com.example.jho.hackillinois;
 
+import android.support.v7.app.AppCompatActivity;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.DialogInterface;
