@@ -18,7 +18,7 @@ Link to [LINK TO CONTRIBUTING.md]
 
 ## License 
 
-Copyright 2019 Gene Lee, Eric Zhang, Peter Chien, Matthew Chow, Johnath Ho
+Copyright 2019 Gene Lee, Eric Zhang, Peter Chien, Matthew Chow, Johnathan Ho
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
