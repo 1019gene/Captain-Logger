@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".SignUpActivity">
 
     <TextView
         android:id="@+id/titleTV"
@@ -26,7 +26,7 @@
         app:layout_constraintVertical_bias="0.169" />
 
     <Button
-        android:id="@+id/login_btn"
+        android:id="@+id/signup_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -35,7 +35,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
-        android:text="login"
+        android:text="signup"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -84,23 +84,23 @@
         android:layout_marginTop="92dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:text="Don't have an account?"
-        app:layout_constraintEnd_toStartOf="@+id/signUpHyperlink"
+        android:text="Already have an account?"
+        app:layout_constraintEnd_toStartOf="@+id/loginHyperlink"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/login_btn" />
+        app:layout_constraintTop_toTopOf="@+id/signup_btn" />
 
     <TextView
-        android:id="@+id/signUpHyperlink"
+        android:id="@+id/loginHyperlink"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="92dp"
         android:layout_marginEnd="112dp"
         android:layout_marginRight="112dp"
         android:onClick="onClick"
-        android:text="Sign up!"
+        android:text="login"
         android:textColor="@android:color/holo_blue_dark"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/login_btn" />
+        app:layout_constraintTop_toTopOf="@+id/signup_btn" />
 
 </android.support.constraint.ConstraintLayout>
