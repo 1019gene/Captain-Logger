@@ -1,4 +1,4 @@
-#Captain Logger
+# Captain Logger
 
 [PROJECT DESCRIPTION]
 
@@ -11,8 +11,10 @@ As college students, we often have many impulses to buy things, but we often don
 ## Contributor Guide
 
 Our project is only in our intial phases, and there are many features still yet to be added. We welcome any sort of contributions.
+
+Link to [LINK TO CONTRIBUTING.md]
                           
-[LINK TO CONTRIBUTING.md]
+[LINK TO CONTRIBUTING.md]:https://github.com/1019gene/Captain-Logger/blob/master/CONTRIBUTING.md
 
 ## License 
 
