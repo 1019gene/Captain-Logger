@@ -1,5 +1,6 @@
 package com.example.jho.hackillinois;
 
+import android.support.v7.app.AppCompatActivity;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.DialogInterface;
@@ -37,14 +38,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         editTextUsername = findViewById(R.id.username_txt);
         editTextPassword = findViewById(R.id.password_txt);
 
+        FirebaseApp.initializeApp(MainActivity.this);
+        fire = FirebaseAuth.getInstance();
+
         Button loginButton = findViewById(R.id.login_btn);
         loginButton.setOnClickListener(this);
 
         TextView signUp = findViewById(R.id.signUpHyperlink);
         signUp.setOnClickListener(this);
-
-        FirebaseApp.initializeApp(MainActivity.this);
-        fire = FirebaseAuth.getInstance();
     }
 
     private void userLogin() {
