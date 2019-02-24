@@ -7,13 +7,13 @@ import java.util.Map;
 
 public class SortToCategory {
 
-    ReceiptData passedThing;
+    ReceiptData receiptData;
     HashMap<String, Double> data;
 
-    SortToCategory(ReceiptData setPassedThing) {
-        this.passedThing = setPassedThing;
+    SortToCategory(ReceiptData setReceiptData) {
+        this.receiptData = setReceiptData;
 
-        this.data = passedThing.getHashMap();
+        this.data = receiptData.getDataHashMap();
     }
 
     /*
