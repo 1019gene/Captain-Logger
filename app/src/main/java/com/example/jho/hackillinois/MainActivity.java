@@ -36,14 +36,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         editTextUsername = findViewById(R.id.username_txt);
         editTextPassword = findViewById(R.id.password_txt);
 
+        FirebaseApp.initializeApp(MainActivity.this);
+        fire = FirebaseAuth.getInstance();
+
         Button loginButton = findViewById(R.id.login_btn);
         loginButton.setOnClickListener(this);
 
         TextView signUp = findViewById(R.id.signUpHyperlink);
         signUp.setOnClickListener(this);
-
-        FirebaseApp.initializeApp(MainActivity.this);
-        fire = FirebaseAuth.getInstance();
     }
 
     private void userLogin() {
@@ -56,6 +56,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 if (task.isSuccessful()) {
                     Log.d("login", "login success");
                     FirebaseUser user = fire.getCurrentUser();
+                    Log.d("SecondActivity", "Have not reached");
+                    startSecondActivity();
                     //change to new activity
                 } else {
                     AlertDialog failureMessage = new AlertDialog.Builder(MainActivity.this).create();
@@ -82,5 +84,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.login_btn:
                 userLogin();
         }
+    }
+
+    private void startSecondActivity() {
+        startActivity(new Intent(this, SecondActivity.class));
     }
 }

@@ -74,6 +74,7 @@ public class SignUpActivity extends Activity implements View.OnClickListener {
                     Toast.makeText(getApplicationContext(), "Registration successful", Toast.LENGTH_SHORT).show();
                     Log.d("complete", "success");
                     FirebaseUser user = fire.getCurrentUser();
+                    startActivity(new Intent(SignUpActivity.this, SecondActivity.class));
                     //change to new activity
                 } else {
                     Toast.makeText(getApplicationContext(), "Registration failed, please try again", Toast.LENGTH_SHORT).show();

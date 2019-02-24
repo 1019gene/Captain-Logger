@@ -8,11 +8,11 @@ import android.widget.Button;
 
 public class ThirdActivity extends AppCompatActivity {
 
-    Button done = findViewById(R.id.done_btn);
-
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_third);
+
+        Button done = findViewById(R.id.done_btn);
 
         done.setOnClickListener(new View.OnClickListener() {
             @Override
