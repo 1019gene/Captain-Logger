@@ -12,7 +12,12 @@ tools:context=".MainActivity">
         android:id="@+id/camera"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:camera_facing="back"/>
+        app:camera_facing="back"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+
+    </com.camerakit.CameraKitView>
 
 
     <android.support.v7.widget.AppCompatButton
