@@ -6,8 +6,8 @@ As college students, we often have many impulses to buy things, but we often don
 
 [PROJECT FEATURES] 
 
-    * Takes photo of receipt or receives manual user input
-    * Analyzes spendings and categorizez them based on the processing of data
+    - Takes photo of receipt or receives manual user input
+    - Analyzes spendings and categorizez them based on the processing of data
     
   
 ## Contributor Guide
