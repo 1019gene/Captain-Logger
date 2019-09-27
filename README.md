@@ -3,7 +3,9 @@
 [PROJECT DESCRIPTION]
 
 As college students, we often have many impulses to buy things, but we often don't have enough money or spend it too rashly. We hoped that we could create an easy way to keep track of our spendings and give ourselves an overview of how we actually spend our money.
+
 [PROJECT FEATURES] 
+
     * Takes photo of receipt or receives manual user input
     * Analyzes spendings and categorizez them based on the processing of data
     
